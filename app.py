@@ -1,3 +1,7 @@
+import streamlit as st
+import pandas as pd
+import os
+import xml.etree.ElementTree as ET
 hide_footer_style = """
     <style>
     #MainMenu {visibility: hidden;}
@@ -6,11 +10,6 @@ hide_footer_style = """
     </style>
 """
 st.markdown(hide_footer_style, unsafe_allow_html=True)
-import streamlit as st
-import pandas as pd
-import os
-import xml.etree.ElementTree as ET
-
 # Configuración de página (siempre debe ser la primera línea)
 st.set_page_config(page_title="Sistema de Control Fiscal", page_icon="📊", layout="wide")
 
