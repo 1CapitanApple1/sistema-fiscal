@@ -1,3 +1,11 @@
+hide_footer_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_footer_style, unsafe_allow_html=True)
 import streamlit as st
 import pandas as pd
 import os
