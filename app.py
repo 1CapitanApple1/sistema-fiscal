@@ -23,7 +23,7 @@ st.markdown("""
 def check_password():
     """Valida la contraseña antes de mostrar el contenido."""
     def password_entered():
-        if st.session_state["password"] == "1":
+        if st.session_state["password"] == "adminfiscal27":
             st.session_state["password_correct"] = True
             del st.session_state["password"]
         else:
